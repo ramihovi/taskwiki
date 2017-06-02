@@ -10,6 +10,7 @@ import vim  # pylint: disable=F0401
 # Insert the taskwiki on the python path
 BASE_DIR = vim.eval("s:plugin_path")
 sys.path.insert(0, BASE_DIR)
+sys.path.insert(0, "/usr/local/lib/python2.7/dist-packages")
 
 from taskwiki import errors
 from taskwiki import cache as cache_module
